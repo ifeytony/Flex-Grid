@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: rgba(1, 1, 20, 0.808);
+  place-items: center;
+  min-height: 100vh;
+}
+
+.top-buttons{
+   align-items: center;
+   justify-content: space-evenly;
+   display: flex;
+   margin: auto;
+  
+}
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: orangered;  
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.hero-btn:hover{
+  border: 1px solid  hsl(31,77%,52%);  
+  background:  hsl(31,77%,52%);  
+  transition: 1s;
+}
+
+.hero-btn1{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: rgb(78, 160, 228);  
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.hero-btn1:hover{
+  border: 1px solid  hsl(179,100%,13%);  
+  background:  hsl(179,100%,13%);  
+  transition: 1s;
+}
+
+
+main{
+   display: grid;
+   grid-template-areas: 
+   
+   'a a a b'
+   'a a a b'
+   'c c d d'
+   'c c e e'
+   ;
+   gap: 10px;
+   width:70%;
+   margin: auto;
+}
+
+main div{
+   padding: 100px;
+   text-align: center;
+
+   
+}
+
+.item-a{
+   background-color: orangered;
+   grid-area: a;
+}
+
+.item-b{
+   background-color: rgb(255, 196, 0);
+   grid-area: b;
+}
+
+.item-c{
+   background-color: green;
+   grid-area: c;
+}
+
+.item-d{
+   background-color: rgb(78, 160, 228);
+   grid-area: d;
+}
+
+.item-e{
+   background-color: rgb(78, 160, 228);
+   grid-area: e;
+}
+
